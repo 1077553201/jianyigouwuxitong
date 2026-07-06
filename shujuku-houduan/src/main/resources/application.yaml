@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: shujuku-houduan
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:13306/shop_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: Muhetaer01
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-init-sql: "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+
+# JWT配置
+jwt:
+  secret: AegisShopPlatformSecretKeyForJwtTokenGeneration2026VeryLongAndSecure
+  expiration: 86400000 # 24小时（毫秒）
