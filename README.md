@@ -488,8 +488,8 @@ houduan/
 spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:13306/shop_db?...&createDatabaseIfNotExist=true
-    username: root
-    password: Muhetaer01      # ← 改成你的密码
+    username: user
+    password: password      # ← 改成你的密码
     # 端口在URL中修改：13306 → 你的MySQL端口
 ```
 
